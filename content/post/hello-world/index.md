@@ -5,7 +5,9 @@ slug: ai-exploration-journey
 date: 2024-10-04 00:00:00+0000
 image: ai-exploration-cover.jpg
 categories:
+- Example Category
 tags:
+- Example Tag
 weight: 1
 ---
 # AI Exploration: A Journey Through Tools, Ideas, and the Future
