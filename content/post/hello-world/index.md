@@ -3,7 +3,7 @@ title: "AI Exploration: A Journey Through Tools, Ideas, and the Future"
 description: "My journey into AI development, tools, and projects shaping my indie development path."
 slug: ai-exploration-journey
 date: 2024-10-04T00:00:00+0000
-image: 5DF61DFF-1D20-4CF1-88A4-F62767C394D5.webp
+image: cover.jpeg
 categories:
   - AI
   - Indie Development
