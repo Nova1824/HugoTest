@@ -67,4 +67,4 @@ At the end of the day, **Deception Ladder** is about more than just climbing to 
 
 This isn’t just about strategy; it’s about influence. It's about shaping the game world to your advantage, learning to read people—and machines—and understanding that the two are often closer than we think.
 
-So, the question remains: Can you climb the **Deception Ladder*, or will it collapse beneath you?
+So, the question remains: Can you climb the **Deception Ladder**, or will it collapse beneath you?
