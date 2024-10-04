@@ -1,15 +1,22 @@
 ---
-title: AI Exploration: A Journey Through Tools, Ideas, and the Future
-description: My journey into AI development, tools, and projects shaping my indie development path.
+title: "AI Exploration: A Journey Through Tools, Ideas, and the Future"
+description: "My journey into AI development, tools, and projects shaping my indie development path."
 slug: ai-exploration-journey
-date: 2024-10-04 00:00:00+0000
+date: 2024-10-04T00:00:00+0000
 image: cover.jpg
 categories:
-   - Example Category
+  - AI
+  - Indie Development
+  - Personal Journey
 tags:
-   - Example Tag
+  - AI Tools
+  - Chef Sue
+  - Blueprint to the Mind
+  - Custom GPT
 weight: 1
 ---
+
+
 # AI Exploration: A Journey Through Tools, Ideas, and the Future
 
 ## 1. Introduction to My AI Exploration
