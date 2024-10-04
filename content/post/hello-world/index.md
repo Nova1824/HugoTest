@@ -5,14 +5,7 @@ slug: ai-exploration-journey
 date: 2024-10-04 00:00:00+0000
 image: ai-exploration-cover.jpg
 categories:
-    - AI
-    - Indie Development
-    - Personal Journey
 tags:
-    - AI Tools
-    - Chef Sue
-    - Blueprint to the Mind
-    - Custom GPT
 weight: 1
 ---
 # AI Exploration: A Journey Through Tools, Ideas, and the Future
