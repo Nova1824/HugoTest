@@ -16,6 +16,15 @@ tags:
 weight: 1
 ---
 
+## My Hugo Blog Post
+
+This is some content in Markdown.
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+Here is more content below the script.
+
+
 
 # AI Exploration: A Journey Through Tools, Ideas, and the Future
 
