@@ -3,6 +3,7 @@ title: "Structuring Society with AI: An Idea That’s Been Bouncing Around My He
 description: "Exploring how AI can be integrated into society by mirroring human societal structures, creating a data economy, and shifting the way we value labor and creativity."
 slug: structuring-society-with-ai
 date: 2024-10-05
+weight: 1
 tags: 
   - AI
   - Society
