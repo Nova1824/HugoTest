@@ -20,6 +20,7 @@ weight: 1
 
 This is some content in Markdown.
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 Here is more content below the script.
 
