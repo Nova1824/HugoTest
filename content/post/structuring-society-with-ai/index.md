@@ -1,11 +1,18 @@
 ---
 title: "Structuring Society with AI: An Idea That’s Been Bouncing Around My Head"
 description: "Exploring how AI can be integrated into society by mirroring human societal structures, creating a data economy, and shifting the way we value labor and creativity."
+slug: structuring-society-with-ai
 date: 2024-10-05
-author: "Noah"
-tags: ["AI", "Society", "Data Economy", "Automation", "Technology"]
-categories: ["Thoughts", "AI"]
-featured_image: "/ai-society.jpg"
+tags: 
+  - AI
+  - Society
+  - Data Economy
+  - Automation
+  - Technology
+categories:
+  - Thoughts
+  - AI
+image: "/ai-society.jpeg"
 ---
 
 I’ve been thinking about how we can integrate AI into society in a way that mirrors the way we already structure things. We have individuals, families, communities, and then bigger entities like states and nations. What if AI worked in a similar way? This idea has been bouncing around in my head for a while, and today it really started to take shape.
