@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Personal Journey on Hugo Theme Stack Starter</title><link>https://git.noahreardon.blog/categories/personal-journey/</link><description>Recent content in Personal Journey on Hugo Theme Stack Starter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://git.noahreardon.blog/categories/personal-journey/index.xml" rel="self" type="application/rss+xml"/><item><title>Building My Next.js Application: A Journey So Far</title><link>https://git.noahreardon.blog/p/building-my-first-next-js-site/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://git.noahreardon.blog/p/building-my-first-next-js-site/</guid><description>&lt;img src="https://git.noahreardon.blog/p/building-my-first-next-js-site/cover.jpeg" alt="Featured image of post Building My Next.js Application: A Journey So Far" />&lt;h1 id="building-my-nextjs-application-a-journey-so-far">Building My Next.js Application: A Journey So Far
+&lt;/h1>&lt;h2 id="vision-for-the-application">Vision for the Application
+&lt;/h2>&lt;p>The goal for this application goes beyond just a blog. I&amp;rsquo;m building it to serve multiple purposes, including:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Journal and Blog&lt;/strong>: A space to document my journey, my thoughts, and any interesting findings along the way.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Research and Brainstorming Hub&lt;/strong>: A place where I can manage my research, keep track of brainstorming sessions, and store all the insights I gather from different sources.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Conversation Tracking&lt;/strong>: I&amp;rsquo;m integrating this with my conversations with ChatGPT, turning it into a co-founder or co-worker of sorts. It will be particularly useful for managing tangents and exploring ideas in depth. Imagine branching conversation threads off each other, generating documents to save as artifacts, and having conversations from different contexts—pulling in different documents, information, or conversation history. It’s like a fractal of conversations, almost like Twitter for your brain or a memory palace.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Knowledge Management Database&lt;/strong>: I want this app to act as a central repository for everything I learn and explore, making it easier to find information later and build upon existing knowledge.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contextual Focus&lt;/strong>: It will help me hone in on specific contexts, offering tools to organize my work and thoughts depending on what I’m focusing on at any given time.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Task Tracker and Planner&lt;/strong>: I also plan to add functionality for managing tasks and planning ahead, so it doubles as a personal productivity tool.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="setting-the-foundation">Setting the Foundation
+&lt;/h2>&lt;p>I recently embarked on a journey to build a web app using Next.js, and I wanted to share my progress so far. It&amp;rsquo;s been a lot of experimenting, researching, and piecing together different technologies to create a modern, scalable web experience. The number of buzzwords I’ve learned is hilarious. I got the basics up and running almost immediately, but setting up CORS and authentication was a huge time drain. I&amp;rsquo;m glad I have a handle on it now, though (assuming I’m not in the Dunning-Kruger effect 🤞). So here’s the report:&lt;/p>
+&lt;p>I started by setting up a Next.js project, incorporating TypeScript right from the start. TypeScript&amp;rsquo;s type safety is invaluable, especially for building robust applications. I also added Tailwind CSS for quick styling, leveraging its utility-first approach to keep my components clean and responsive.&lt;/p>
+&lt;h2 id="core-features">Core Features
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>NextAuth for Authentication&lt;/strong>: One of the core aspects of my application is user authentication. I chose NextAuth because of its simplicity and flexibility. So far, I’ve managed to set up both an unprotected landing page and a protected page, ensuring that only authenticated users can access specific content.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Supabase for the Database&lt;/strong>: For database integration, I decided to use Supabase. It’s a great alternative to Firebase, offering a straightforward API and built-in PostgreSQL support. I haven’t fully connected it yet, but it&amp;rsquo;s in the pipeline.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="exploring-templates-challenges-and-wins">Exploring Templates: Challenges and Wins
+&lt;/h2>&lt;p>Before settling on the current setup, I explored a few different templates and deployment options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Hugo Site Deployed with GitHub Pages&lt;/strong>: I initially tried using a Hugo template for a static site. It deployed well with GitHub Pages, but adapting it to work with Netlify proved difficult, especially getting Netlify Identity to function correctly. Ultimately, it felt too rigid for my needs.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Next.js Site Deployed with Netlify&lt;/strong>: My next attempt was a basic Next.js blog deployed with Netlify. While it worked, it was very basic—lacking features like complex navigation, search, and categorization. Plus, I struggled to fully understand how to expand upon the chosen theme.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Starting Fresh with a Bare-Bones Next.js App&lt;/strong>: Eventually, I decided to start with a bare-bones Next.js setup and manually integrate everything I needed, including NextAuth for authentication. This approach allowed me to understand each component deeply, and I&amp;rsquo;ll be hosting this version with Vercel for its streamlined deployment process.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="application-structure">Application Structure
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Dynamic Routes&lt;/strong>: These are key for creating unique pages like individual blog posts. I’ve set up dynamic routes to handle different user pages and content types.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>SSR and SSG&lt;/strong>: I&amp;rsquo;ve implemented both Server-Side Rendering (SSR) and Static Site Generation (SSG) where needed. SSR is great for personalized content, while SSG helps with performance for static pages.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Reusable Layout Component&lt;/strong>: I created a &lt;code>layout.tsx&lt;/code> file to maintain a consistent layout across pages, ensuring shared elements like navigation and footer remain in one place.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Global Styles and Configs&lt;/strong>: I’ve set up &lt;code>globals.css&lt;/code> for shared styles and configured ESLint to keep my code consistent and clean. The &lt;code>next.config.mjs&lt;/code> and &lt;code>package.json&lt;/code> files help manage my dependencies and configurations.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="debugging-adventures-the-three-period-bug">Debugging Adventures: The Three-Period Bug
+&lt;/h2>&lt;p>One particularly funny struggle I had was with a bug in my dynamic routing setup. I spent quite a bit of time trying to figure out why the route wasn&amp;rsquo;t working as expected—only to realize that I needed three periods (&lt;code>...&lt;/code>) instead of two (&lt;code>..&lt;/code>) in the dynamic route definition. It was a simple typo, but it caused quite a headache until I figured it out. Definitely a good reminder to pay attention to those small details!&lt;/p>
+&lt;h2 id="setting-up-cors-for-security">Setting Up CORS for Security
+&lt;/h2>&lt;p>When deploying my API routes via serverless functions on Vercel, I faced the challenge of properly configuring CORS (Cross-Origin Resource Sharing) to ensure that only trusted domains can make requests.&lt;/p>
+&lt;p>Here’s what I did:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Created a &lt;code>middleware.ts&lt;/code> file&lt;/strong> to handle CORS for all API routes. This simplified the code in each individual API handler and ensured consistency across the project.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Testing&lt;/strong> involved deploying to production and confirming that only authorized domains could access the API without encountering CORS issues. This setup greatly enhances the security of my application by preventing unauthorized domains from making API requests.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="local-development-setup">Local Development Setup
+&lt;/h2>&lt;p>Right now, everything is running locally. I’m using VS Code as my main IDE, with Chrome for testing and GitHub Desktop for source control. This workflow allows me to iterate quickly and track changes effectively.&lt;/p>
+&lt;h2 id="issues-were-working-through">Issues We&amp;rsquo;re Working Through
+&lt;/h2>&lt;h3 id="1-too-many-requests-error">1. &amp;ldquo;Too Many Requests&amp;rdquo; Error
+&lt;/h3>&lt;p>The HTTP 429 status code suggests that the app has exceeded its rate limit, either due to legitimate use or potentially from malicious requests.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Solutions&lt;/strong>:
+&lt;ul>
+&lt;li>Implement rate limiting on the backend to prevent abuse.&lt;/li>
+&lt;li>Review access logs to identify any unusual activity.&lt;/li>
+&lt;li>Consider using a service like Cloudflare for DDoS protection and network-level rate limiting.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-session-storage-and-security">2. Session Storage and Security
+&lt;/h3>&lt;p>The &lt;code>nextauth.message&lt;/code> object in session storage is part of NextAuth’s internal mechanism. Storing sensitive data client-side could be vulnerable to XSS attacks.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Solutions&lt;/strong>:
+&lt;ul>
+&lt;li>Ensure OAuth tokens are stored in HTTP-only cookies, which are inaccessible via JavaScript, providing enhanced security.&lt;/li>
+&lt;li>Shift session handling entirely server-side for better security, minimizing reliance on client-side storage.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-implementing-content-security-policies-csp">3. Implementing Content Security Policies (CSP)
+&lt;/h3>&lt;ul>
+&lt;li>Adding a Content Security Policy (CSP) to mitigate risks like cross-site scripting (XSS).&lt;/li>
+&lt;li>Adding COEP (Cross-Origin Embedder Policy) and COOP (Cross-Origin Opener Policy) headers for better security, especially for embedded resources.&lt;/li>
+&lt;/ul>
+&lt;h2 id="looking-ahead">Looking Ahead
+&lt;/h2>&lt;p>Next up, I plan to fully integrate Supabase, add OAuth providers to the authentication setup, and start focusing on the content aspect of the site—like this blog! Once everything is polished locally, I&amp;rsquo;ll be deploying the application on Vercel.&lt;/p>
+&lt;p>I also plan to explore Vercel’s KV database integration for enhanced storage capabilities, as it integrates nicely with Vercel and could be a good fit for managing some of the dynamic content aspects of my application.&lt;/p>
+&lt;p>It’s been exciting to put all these pieces together, and I’m looking forward to seeing where this journey takes me. Stay tuned for more updates as I continue building!&lt;/p>
+&lt;h2 id="technical-appendix-folder-structure-overview">Technical Appendix: Folder Structure Overview
+&lt;/h2>&lt;p>This section provides a detailed overview of the folder structure for developers interested in understanding the technical layout of the application.&lt;/p>
+&lt;h3 id="top-level-folders-and-files">Top-Level Folders and Files
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>.next&lt;/strong>: Auto-generated when you build your Next.js project.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>cache&lt;/strong>: Used by Next.js to optimize repeated builds.&lt;/li>
+&lt;li>&lt;strong>server, static, types&lt;/strong>: Server-side code, static assets, and TypeScript type definitions used by Next.js during execution.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>node_modules&lt;/strong>: Dependencies installed via npm or yarn.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>src&lt;/strong>: Main folder where the source code resides.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>app&lt;/strong>: The Next.js app directory follows the new App Router paradigm.
+&lt;ul>
+&lt;li>&lt;strong>about/page.tsx&lt;/strong>: Defines the &amp;ldquo;About&amp;rdquo; page.&lt;/li>
+&lt;li>&lt;strong>api/auth/[&amp;hellip;nextauth]/route.ts&lt;/strong>: Sets up the NextAuth API route for authentication.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>fonts&lt;/strong>: Contains custom fonts (e.g., GeistMonoVF.woff).&lt;/li>
+&lt;li>&lt;strong>favicon.ico&lt;/strong>: The browser tab icon.&lt;/li>
+&lt;li>&lt;strong>globals.css&lt;/strong>: Global CSS styles for typography, body styles, and shared utilities.&lt;/li>
+&lt;li>&lt;strong>layout.tsx&lt;/strong>: Reusable layout wrapping around every page, including navigation bars and footers.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>components&lt;/strong>: Reusable UI pieces, like &lt;code>button.tsx&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>lib, services, styles&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>lib&lt;/strong>: Utility functions and reusable logic.&lt;/li>
+&lt;li>&lt;strong>services&lt;/strong>: Handles service-level logic like fetching data from APIs.&lt;/li>
+&lt;li>&lt;strong>styles&lt;/strong>: CSS files for styling individual components.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="config-and-other-files">Config and Other Files
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>.env.local&lt;/strong>: Stores environment variables for local development, like API keys.&lt;/li>
+&lt;li>&lt;strong>.eslintrc.json&lt;/strong>: Configuration for ESLint to enforce code style.&lt;/li>
+&lt;li>&lt;strong>.gitignore&lt;/strong>: Specifies files and directories that Git should ignore.&lt;/li>
+&lt;li>&lt;strong>next.config.mjs&lt;/strong>: Main configuration for Next.js, including custom webpack settings.&lt;/li>
+&lt;li>&lt;strong>package.json&lt;/strong>: Metadata about the project, including scripts and dependencies.&lt;/li>
+&lt;li>&lt;strong>tailwind.config.js&lt;/strong>: Configuration for Tailwind CSS.&lt;/li>
+&lt;li>&lt;strong>tsconfig.json&lt;/strong>: TypeScript configuration for compiler options and path aliases.&lt;/li>
+&lt;/ul>
+&lt;h3 id="summary-of-rationale">Summary of Rationale
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Modularization and Reusability&lt;/strong>: Files like &lt;code>button.tsx&lt;/code> are stored in components to ensure UI elements are reusable, promoting clean and maintainable code.&lt;/li>
+&lt;li>&lt;strong>Separation of Concerns&lt;/strong>: Grouping related files (e.g., APIs, components, services) makes navigation easier and keeps the codebase consistent.&lt;/li>
+&lt;li>&lt;strong>App Router &amp;amp; Layout&lt;/strong>: The use of &lt;code>app&lt;/code> and &lt;code>layout.tsx&lt;/code> leverages Next.js&amp;rsquo;s new App Router feature for cleaner routing and consistent page design.&lt;/li>
+&lt;li>&lt;strong>Scalability&lt;/strong>: Splitting logic into &lt;code>lib&lt;/code> and &lt;code>services&lt;/code> helps scale without creating tightly coupled, monolithic components.&lt;/li>
+&lt;/ul>
+&lt;p>Overall, the folder structure reflects an organized approach balancing flexibility and scalability, making future expansion and maintenance much easier.&lt;/p></description></item><item><title>AI Exploration: A Journey Through Tools, Ideas, and the Future</title><link>https://git.noahreardon.blog/p/ai-exploration-journey/</link><pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate><guid>https://git.noahreardon.blog/p/ai-exploration-journey/</guid><description>&lt;img src="https://git.noahreardon.blog/p/ai-exploration-journey/cover.jpeg" alt="Featured image of post AI Exploration: A Journey Through Tools, Ideas, and the Future" />&lt;h2 id="my-hugo-blog-post">My Hugo Blog Post
+&lt;/h2>&lt;p>This is some content in Markdown.&lt;/p>
+&lt;script src="https://identity.netlify.com/v1/netlify-identity-widget.js">&lt;/script>
+&lt;p>Here is more content below the script.&lt;/p>
+&lt;h1 id="ai-exploration-a-journey-through-tools-ideas-and-the-future">AI Exploration: A Journey Through Tools, Ideas, and the Future
+&lt;/h1>&lt;h2 id="1-introduction-to-my-ai-exploration">1. Introduction to My AI Exploration
+&lt;/h2>&lt;p>My AI journey began with two pivotal moments: when my mom shared an article about GPT-01 and when my dad introduced me to a Lex Friedman interview with Peter Levels, where the solo indie developer journey was discussed. These moments merged my love for problem-solving with my curiosity about how AI could mimic, and even augment, human cognition.&lt;/p>
+&lt;p>With my background in mechanical engineering and software development, I’ve always been drawn to systems thinking. AI seemed like a natural extension of this—allowing me to explore not just how things work but how they could think, adapt, and evolve over time.&lt;/p>
+&lt;h2 id="2-ai-news-and-updates">2. AI News and Updates
+&lt;/h2>&lt;p>The AI landscape moves fast, and I’m continually exploring new tools, models, and ideas that emerge. From GPT-3 to GPT-4 and now Custom GPTs, I’m watching how these developments shape business, creativity, and problem-solving.&lt;/p>
+&lt;h3 id="key-ai-milestones-and-tools">Key AI Milestones and Tools
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Custom GPTs:&lt;/strong> The introduction of Custom GPTs allows for more specific, task-focused AI interactions. These models provide a middle ground between prompt engineering and training new models, opening up endless possibilities for personalized app development, like Chef Sue and Co-Founder GPT.&lt;/li>
+&lt;li>&lt;strong>Integration in Everyday Tools:&lt;/strong> AI has been seamlessly integrated into everyday tools like &lt;em>Notion&lt;/em>, &lt;em>Canva&lt;/em>, &lt;em>Flow&lt;/em>, and &lt;em>Spark&lt;/em>, allowing me to optimize tasks, streamline project management, and even automate email sorting and responses.&lt;/li>
+&lt;/ul>
+&lt;h3 id="staying-informed">Staying Informed
+&lt;/h3>&lt;p>Keeping track of the latest developments is crucial. I rely on a range of tools and communities for staying in the loop:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Newsletters:&lt;/strong> I regularly read The Bootstrapped Founder, Indie Hackers Newsletter, SaaS Weekly, and Levels.io for updates in AI and indie development.&lt;/li>
+&lt;li>&lt;strong>Podcasts:&lt;/strong> Indie Hackers Podcast, The SaaS Podcast, and Build Your SaaS Podcast are excellent resources for learning from others on similar entrepreneurial paths.&lt;/li>
+&lt;li>&lt;strong>Communities:&lt;/strong> Platforms like Indie Hackers, &lt;em>Product Hunt&lt;/em>, and &lt;em>Hacker News&lt;/em> keep me connected with others working on indie projects and AI applications.&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-experimenting-with-ai-apps-and-tools">3. Experimenting with AI Apps and Tools
+&lt;/h2>&lt;p>Experimentation has been a key part of my AI journey, allowing me to see firsthand how AI can enhance productivity, creativity, and decision-making. Here&amp;rsquo;s a breakdown of the tools in my ecosystem that I’ve worked with:&lt;/p>
+&lt;h3 id="productivity">Productivity
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>Reminders&lt;/em> – Task management and scheduling.&lt;/li>
+&lt;li>&lt;em>Otter&lt;/em> – For voice note-taking and transcription, used in brainstorming sessions.&lt;/li>
+&lt;li>&lt;em>Google Sheets &amp;amp; Docs&lt;/em> – Core for spreadsheet management and document writing.&lt;/li>
+&lt;li>&lt;em>Google Drive&lt;/em> – Central file storage and sharing across projects.&lt;/li>
+&lt;li>&lt;em>Notion&lt;/em> – My go-to for project management, task tracking, and knowledge storage.&lt;/li>
+&lt;li>&lt;em>Flow&lt;/em> – Productivity and project tracking, especially useful for collaborating across tasks.&lt;/li>
+&lt;li>&lt;em>Agenda&lt;/em> – Date-focused note-taking and task organizing.&lt;/li>
+&lt;li>&lt;em>Spark&lt;/em> – Efficient email management with prioritization and automation.&lt;/li>
+&lt;/ul>
+&lt;p>These tools streamline my workflows, allowing me to focus on higher-level creative work and strategic planning.&lt;/p>
+&lt;h3 id="ai-builders">AI Builders
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>Marbleism&lt;/em> – For conceptual ideation and brainstorming new ideas.&lt;/li>
+&lt;li>&lt;em>Glitch.com&lt;/em> – A platform for building and collaborating on web apps.&lt;/li>
+&lt;li>&lt;em>Looka&lt;/em> – AI-generated logos and branding design.&lt;/li>
+&lt;li>&lt;em>Zapier&lt;/em> – Automating workflows between apps, ensuring smooth operation across platforms.&lt;/li>
+&lt;/ul>
+&lt;h3 id="art-tools">Art Tools
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>Picsart&lt;/em> – For editing and refining visuals, helping me generate images tailored to specific design needs.&lt;/li>
+&lt;li>&lt;em>DaVinci&lt;/em>, &lt;em>Artist.ai&lt;/em>, and &lt;em>Openart.ai&lt;/em> – AI-driven platforms for creating digital artwork.&lt;/li>
+&lt;li>&lt;em>Procreate&lt;/em> – A more hands-on creative tool for drawing and illustration.&lt;/li>
+&lt;li>&lt;em>SketchAI&lt;/em> – For sketching concepts quickly using AI suggestions.&lt;/li>
+&lt;/ul>
+&lt;p>These apps assist in both professional design work and creative exploration. Whether I’m refining a design or brainstorming new visuals, tools like &lt;em>WONDER&lt;/em> and &lt;em>Procreate&lt;/em> help me generate fresh ideas and see them through to completion.&lt;/p>
+&lt;h3 id="graph-visualization--research">Graph Visualization &amp;amp; Research
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>Mermaid Charts&lt;/em> – For generating flowcharts and visual representations of workflows or systems.&lt;/li>
+&lt;li>&lt;em>ObservableHQ&lt;/em> – A platform for building interactive data visualizations.&lt;/li>
+&lt;li>&lt;em>Figma&lt;/em> – Collaborative wireframing and UI/UX design, great for complex system visualizations.&lt;/li>
+&lt;li>&lt;em>Freeform&lt;/em> – A flexible tool for brainstorming and sketching ideas, especially useful in early-stage visual planning.&lt;/li>
+&lt;li>&lt;em>Miro&lt;/em> – A collaborative whiteboarding tool for visualizing complex projects and workflows.&lt;/li>
+&lt;/ul>
+&lt;h3 id="research--scouting">Research &amp;amp; Scouting
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>Product Hunt&lt;/em>, &lt;em>TechCrunch&lt;/em>, &lt;em>Indie Hackers&lt;/em>, and &lt;em>Hacker News&lt;/em> – Platforms for staying informed about new products and tech trends, often sparking ideas for new features or products.&lt;/li>
+&lt;li>&lt;em>Perplexity&lt;/em> – For answering technical questions and supporting research with concise, focused responses.&lt;/li>
+&lt;li>&lt;em>Nomad List&lt;/em> – A platform for discovering remote work opportunities and connecting with digital nomads.&lt;/li>
+&lt;li>&lt;em>TradingView&lt;/em> – Used for tracking market trends, stocks, and financial data.&lt;/li>
+&lt;/ul>
+&lt;h3 id="financial--management">Financial &amp;amp; Management
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>RocketMoney&lt;/em> – For tracking personal finances, especially useful for managing subscription-based services and budgeting.&lt;/li>
+&lt;li>&lt;em>1Password&lt;/em> – Secure password management across tools and platforms.&lt;/li>
+&lt;/ul>
+&lt;h3 id="entertainment">Entertainment
+&lt;/h3>&lt;ul>
+&lt;li>&lt;em>Character AI&lt;/em> – Primarily used as an entertainment platform for AI-driven conversations with various personas, adding a creative and experimental element to my toolset.&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-capabilities-of-ai-misconceptions-and-practical-uses">4. Capabilities of AI, Misconceptions, and Practical Uses
+&lt;/h2>&lt;p>Through my exploration, I’ve discovered some significant AI capabilities while also addressing common misconceptions:&lt;/p>
+&lt;h3 id="capabilities-of-ai">Capabilities of AI
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Language Understanding &amp;amp; Generation:&lt;/strong> AI&amp;rsquo;s ability to process natural language has become fundamental to tools like &lt;em>ChatGPT&lt;/em> and &lt;em>Claude&lt;/em>, which I use for brainstorming and ideation. These tools allow me to express thoughts fluidly, without worrying about phrasing or perfect sentence structures.&lt;/li>
+&lt;li>&lt;strong>Visual Creativity:&lt;/strong> Tools like &lt;em>Picsart&lt;/em> and &lt;em>DaVinci&lt;/em> streamline the design process, offering creative suggestions and automated workflows.&lt;/li>
+&lt;li>&lt;strong>Memory &amp;amp; Knowledge Management:&lt;/strong> AI-powered platforms like &lt;em>Notion&lt;/em> and &lt;em>Zapier&lt;/em> allow me to manage vast amounts of data and automate repetitive tasks. This boosts my efficiency and reduces cognitive load, enabling me to focus on more strategic and creative tasks.&lt;/li>
+&lt;/ul>
+&lt;h3 id="common-misconceptions">Common Misconceptions
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>AI Will Replace Jobs:&lt;/strong> A common misconception is that AI will replace human labor. I view AI as a tool for enhancing human creativity and productivity, not replacing it. For example, &lt;em>Chef Sue&lt;/em> leverages AI to assist in meal planning but doesn’t replace the human element of culinary creativity.&lt;/li>
+&lt;li>&lt;strong>AI Is Autonomous:&lt;/strong> Another misconception is that AI operates autonomously. In reality, AI requires human guidance, oversight, and critical thinking to be truly effective. My projects like &lt;em>Co-Founder GPT&lt;/em> and &lt;em>Blueprint to the Mind&lt;/em> rely on a combination of human direction and AI augmentation.&lt;/li>
+&lt;/ul>
+&lt;h3 id="practical-uses-of-ai">Practical Uses of AI
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Chef Sue:&lt;/strong> AI powers meal recommendations, grocery list generation, and meal planning in my kitchen assistant app. It allows users to make smarter decisions about their meals based on preferences, schedules, and dietary needs.&lt;/li>
+&lt;li>&lt;strong>Memory Augmentation:&lt;/strong> In &lt;em>Blueprint to the Mind&lt;/em>, I’m working to extend human memory through AI, allowing for enhanced cognitive retrieval and thought organization. The goal is to have a searchable and dynamic system for life management, with AI acting as a second brain.&lt;/li>
+&lt;/ul>
+&lt;h2 id="5-the-role-of-chatgpt-in-shaping-my-thought-process-and-research">5. The Role of ChatGPT in Shaping My Thought Process and Research
+&lt;/h2>&lt;p>&lt;em>ChatGPT&lt;/em> has had a particularly transformative impact on how I approach research, brainstorming, and writing. It&amp;rsquo;s more than just a tool; it has become an extension of my thinking process, allowing me to dive deep into ideas and tangents without being bogged down by the usual roadblocks like writer&amp;rsquo;s block or phrasing issues. Here are some specific ways it has shaped my workflow:&lt;/p>
+&lt;h3 id="exploring-tangents-and-unconventional-ideas">Exploring Tangents and Unconventional Ideas
+&lt;/h3>&lt;p>One of &lt;em>ChatGPT’s&lt;/em> greatest strengths is its ability to follow my train of thought—no matter how tangential or abstract. When I&amp;rsquo;m brainstorming, I often jump between concepts, ideas, and projects, and ChatGPT helps me explore these threads without losing momentum.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Fluid Ideation:&lt;/strong> ChatGPT enables me to rapidly explore various offshoots of a single idea. Whether I&amp;rsquo;m considering a new feature for &lt;em>Chef Sue&lt;/em> or brainstorming how to improve &lt;em>Blueprint to the Mind&lt;/em>, ChatGPT lets me map out potential directions quickly.&lt;/li>
+&lt;li>&lt;strong>Deep Dives into Research:&lt;/strong> When researching complex topics, like RAG systems or the evolution of AI models, ChatGPT helps synthesize information and guide my next steps, allowing me to avoid getting lost in irrelevant details. I can ask clarifying questions and refine my understanding of complex subjects on the fly.&lt;/li>
+&lt;/ul>
+&lt;h3 id="managing-attention-and-focus">Managing Attention and Focus
+&lt;/h3>&lt;p>AI has also helped me better manage my attention, particularly when juggling multiple projects and ideas simultaneously. Instead of worrying about capturing every thought perfectly, I let ChatGPT handle the heavy lifting of phrasing and idea refinement.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Freeing Cognitive Load:&lt;/strong> By allowing ChatGPT to handle sentence structuring and basic research, I can focus my cognitive energy on higher-order thinking—connecting ideas, seeing patterns, and deciding on the next steps for my projects.&lt;/li>
+&lt;li>&lt;strong>Reducing Friction in Writing:&lt;/strong> Writer’s block has always been an obstacle, especially when trying to communicate complex ideas or maintain momentum in a long piece of writing. With ChatGPT, I can get past that initial hurdle. I can communicate my thoughts in a rough form, and ChatGPT refines them into something cohesive and well-phrased.&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-through-writers-block">Breaking Through Writer’s Block
+&lt;/h3>&lt;p>&lt;em>ChatGPT&lt;/em> has fundamentally altered the way I approach written communication. Where I once struggled with writer’s block—whether from not knowing how to start or from overthinking how to phrase things—ChatGPT has removed those obstacles entirely.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Speeding Up Content Creation:&lt;/strong> Whether I’m drafting newsletters, blogs, or technical documentation, ChatGPT speeds up the process. Instead of agonizing over word choice or structure, I can rely on ChatGPT to offer a polished draft that I can easily refine further.&lt;/li>
+&lt;li>&lt;strong>Expressing Ideas More Freely:&lt;/strong> I no longer worry about perfect phrasing or grammar in my initial drafts. ChatGPT allows me to focus on the core message and then helps me turn it into something structured and coherent.&lt;/li>
+&lt;/ul>
+&lt;h3 id="shaping-my-thinking-and-communication">Shaping My Thinking and Communication
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Brainstorming Partner:&lt;/strong> In many ways, ChatGPT acts as a brainstorming partner—suggesting new angles, asking clarifying questions, and helping me articulate complex ideas more clearly. This iterative process has shaped the way I approach problem-solving and creative ideation.&lt;/li>
+&lt;li>&lt;strong>Reflecting and Structuring Ideas:&lt;/strong> ChatGPT excels at reflecting back my own ideas, often reframing them in ways I hadn’t initially considered. This helps me clarify my thoughts and see the broader context of what I’m working on.&lt;/li>
+&lt;/ul>
+&lt;h2 id="6-my-ai-projects-and-app-ideas">6. My AI Projects and App Ideas
+&lt;/h2>&lt;h3 id="chef-sue">Chef Sue
+&lt;/h3>&lt;p>&lt;em>Chef Sue&lt;/em> leverages AI to make meal planning and grocery shopping more efficient and personalized.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Personalized Recipe Suggestions:&lt;/strong> Chef Sue uses a &lt;em>Retrieval-Augmented Generation (RAG)&lt;/em> system to pull recipe data from both user preferences and third-party APIs.&lt;/li>
+&lt;li>&lt;strong>Automated Grocery Lists:&lt;/strong> AI generates grocery lists based on selected recipes, optimizing for user preferences and dietary needs.&lt;/li>
+&lt;li>&lt;strong>Meal Planning:&lt;/strong> The app offers meal plans tailored to the user’s schedule, preferences, and budget, making the process of planning meals easier and more efficient.&lt;/li>
+&lt;/ul>
+&lt;h3 id="blueprint-to-the-mind">Blueprint to the Mind
+&lt;/h3>&lt;p>This project is my vision of a &lt;em>memory augmentation tool&lt;/em> that helps organize and retrieve thoughts, ideas, and experiences.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Persona Modeling:&lt;/strong> The system would model a user’s behavior, offering context-specific reminders and insights based on past interactions.&lt;/li>
+&lt;li>&lt;strong>Evolving Memory Storage:&lt;/strong> The AI would act as an extension of human memory, continuously capturing experiences and making them searchable and retrievable on demand.&lt;/li>
+&lt;/ul>
+&lt;h3 id="co-founder-gpt">Co-Founder GPT
+&lt;/h3>&lt;p>I’m developing a Custom GPT that acts as a co-founder, assisting with project management, brainstorming, and decision-making.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Task Management and Memory Recall:&lt;/strong> This AI assistant will store project milestones and ideas, offering insights during brainstorming sessions and helping manage multiple projects.&lt;/li>
+&lt;/ul>
+&lt;p>Incorporating these tools into my daily work has helped me navigate the challenges of indie development and research, allowing me to stay focused, organized, and always exploring new ideas. Whether it&amp;rsquo;s managing the finer details of my projects, brainstorming new concepts, or overcoming writing obstacles, AI has become an integral part of my creative and professional process.&lt;/p>
+&lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
+>https://stack.jimmycai.com/&lt;/a>&lt;/p>
+&lt;p>Want a site like this? Check out &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>hugo-theme-stack-stater&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
